@@ -1,11 +1,36 @@
-function abc(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    console.log("value " + (i + 1) + ": " + arr[i]);
-  }
+
+function currency (amount = 10, conversionRate = 270) {
+  return amount * conversionRate;
 }
 
-abc(["test1", "test2", "test3"]);
-console.log("*-----------Second Arr-----------*");
-abc([1,2,3,4,5,6,76,89]);
-console.log("*-----------Second Arr-----------*");
-abc([0.1,0.5,0.6,0.7,1.85]);
+console.log(`1 usd = ${270} so 10 usd = ${currency(10, 270)}`);
+
+
+const currencyConverter = function (amount = 50 , conversionRate = 270) {
+  return amount * conversionRate;
+}
+console.log(`1 usd = 270 so 50 USD = ${currencyConverter(50 , 270)} `)
+
+const currencyConversion = (amount = 100 , conversionRate = 270) => {
+  return amount * conversionRate;
+}
+console.log(`1 usd = 270 so 100 USD = ${currencyConversion()} `)
+let conversionRate;
+const currencyAlpha = (amount , currency ) => {
+  
+  if (currency == "usd"){
+   conversionRate = 270 ;
+  } else if (currency == "pkr") {
+    conversionRate = 0.0036 ;
+  }
+  return amount * conversionRate;
+}
+console.log(`1 pkr = ${conversionRate} so ${320} pkr = ${currencyAlpha(320, "pkr")} ٴ`)
+
+console.log(`1 pkr = ${conversionRate} so ${320} pkr = ${currencyAlpha(320, "pkr")} ٴ`)
+
+console.log(currencyAlpha(50000, "pkr"));
+console.log(currencyAlpha(89333, "pkr"));
+console.log(currencyAlpha(533, "usd"));
+
+
