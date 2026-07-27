@@ -36,4 +36,14 @@ console.log(fullForm(13))
 
 const Cubed = (Number) => Number*Number*Number;
 const isPositive = (num) => num >= 0;
-console.log(isPositive(-2))
+const toUpper = (name) => name.toUpperCase();
+//Class Task 04
+let price = 2000 ;
+const discountCalculator = (price , isMember) => {
+    if(isMember == true){
+        return price - ((20*2000) / 100) ;
+    } else {
+        return price - ((5*2000)/100) ;
+    }
+}
+console.log(discountCalculator(2000,true))
