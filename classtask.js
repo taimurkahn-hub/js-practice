@@ -31,3 +31,9 @@ const fullForm = (weight) => {
     }
 }
 console.log(fullForm(13))
+
+//Class task 04
+
+const Cubed = (Number) => Number*Number*Number;
+const isPositive = (num) => num >= 0;
+console.log(isPositive(-2))
