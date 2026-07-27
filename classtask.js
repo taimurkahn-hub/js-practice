@@ -9,8 +9,8 @@ console.log(multiplication(5,7))
 
 //Class Task 02
 
-const checkPassGrade = function (a) {
-    if(a >=40){
+const checkPassGrade = function (score) {
+    if(score >=40){
         return true;
     } else {
         return false;
@@ -18,3 +18,16 @@ const checkPassGrade = function (a) {
 
 }
 console.log(checkPassGrade(30))
+
+//Class Task 03
+
+const fullForm = (weight) => {
+    if (weight <= 2){
+        return "light";
+    } else if(weight <=10){
+        return "medium";
+    } else if (weight > 10) {
+        return "heavy";
+    }
+}
+console.log(fullForm(13))
