@@ -32,5 +32,5 @@ console.log(`1 pkr = ${conversionRate} so ${320} pkr = ${currencyAlpha(320, "pkr
 console.log(currencyAlpha(50000, "pkr"));
 console.log(currencyAlpha(89333, "pkr"));
 console.log(currencyAlpha(533, "usd"));
-
+console.log(currencyAlpha(5000, "usd"));
 
