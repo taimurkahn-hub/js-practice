@@ -41,4 +41,5 @@ const discount = 20;
 for (const p of prices) {
   const finalPrice = applyDiscount(p, discount);
   console.log(`Original: $${p} -> Discounted (${discount}%): $${finalPrice}`);
+  
 }
