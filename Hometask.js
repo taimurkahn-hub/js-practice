@@ -12,3 +12,16 @@ const applyDiscount = function (price , DiscountPercentage) {
     return price-discountAmount;
 }
 console.log(applyDiscount(1000 , 10))
+
+// Task3 
+
+function getInterestCatagory (creditScore){
+    if(creditScore>=750){
+        return "Low Risk"
+    } else if(creditScore>=600){
+        return "Medium Risk"
+    } else if (creditScore<600){
+        return "High Risk"
+    }
+}
+console.log(getInterestCatagory(500))
