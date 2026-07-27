@@ -27,8 +27,5 @@ function getInterestCatagory (creditScore){
 console.log(getInterestCatagory(500))
 
 //Task 04
-const convertDistanceUnit = (distance) => {
-   distance = distance * 0.621 ;
-   return distance;
-}
+const convertDistanceUnit = (distance) => distance = distance * 0.621 ;
 console.log(convertDistanceUnit(20))
