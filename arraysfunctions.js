@@ -34,7 +34,8 @@ console.log(numbers);
 numbers.pop();
 console.log(numbers);
 let totalMarks = 0;
-students.forEach((value) => {
+students.forEach((value , i) => {
     totalMarks = value.Marks +totalMarks;
+    console.log(" index : " + i + " value : " ,value.Marks)
 })
 console.log(totalMarks);
