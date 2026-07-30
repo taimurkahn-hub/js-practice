@@ -22,7 +22,7 @@ const students = [
     },
     {
         id : 4, 
-        Name : "Waqas Khan",
+        name : "Waqas Khan",
         Marks : 25,
         Course : "Mern",
 
@@ -39,3 +39,17 @@ students.forEach((value , i) => {
     console.log(" index : " + i + " value : " ,value.Marks)
 })
 console.log(totalMarks);
+
+let updatedStudents = [];
+updatedStudents = students.map((value)=>{
+    if(value.Marks>=40){
+        value.grade = "A" ;
+    } else{
+        value.grade = "F"
+    }
+    if(value.Course){
+      value.Course= value.Course.toUpperCase();
+    }
+    return value;
+})
+console.log(updatedStudents)
