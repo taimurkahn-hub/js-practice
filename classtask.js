@@ -37,7 +37,9 @@ console.log(fullForm(13))
 const Cubed = (Number) => Number*Number*Number;
 const isPositive = (num) => num >= 0;
 const toUpper = (name) => name.toUpperCase();
+
 //Class Task 04
+
 let price = 2000 ;
 const discountCalculator = (price , isMember) => {
     if(isMember == true){
